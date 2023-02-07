@@ -2,7 +2,7 @@
 /**
  * main - print 1-100 and prints fizz buzz and fizzbuzz on appropriate multiples
  *
- * Return: Alaways 0
+ * Return: Always 0
  */
 int main(void)
 {
