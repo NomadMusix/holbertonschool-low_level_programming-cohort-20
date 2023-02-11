@@ -5,7 +5,7 @@
  * overwriting the terminating null byte (\0) at the end of dest, 
  * and then adds a terminating null byte
  */
-char *_strcat(char *dest, char *src);
+char *_strcat(char *dest, char *src)
 {
 	int a = 0, b = 0;
 
