@@ -1,12 +1,10 @@
 #include "holberton.h"
 /**
- *
- * _strcat - appends src string to dest string
+ * *_strcat - appends src string to dest string
  * @dest: string to appended
  * @src: copied string
  *
  * Return: pointer to resulting string dest
- *
  */
 char *_strcat(char *dest, char *src)
 {
