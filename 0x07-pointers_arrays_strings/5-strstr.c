@@ -20,10 +20,10 @@ char *_strstr(char *haystack, char *needle)
 	{
 		len2 = 0; /* rest index for needle on each iteration */
 
-		/* loop through needle until end of string is reached */
+		/* loop through needle until end of string reached */
 		while (needle[len2] != '\0')
 		{
-			/* compare characters at corresponding indices */
+			/* compare characters at corresponing indices */
 			if (haystack[len1] == needle[len2])
 			{
 				len1++; /* move to next character in haystack */
@@ -31,10 +31,10 @@ char *_strstr(char *haystack, char *needle)
 			}
 			else
 			{
-				break; /* exist loop on mismatch */
+				break; /* exit loop on mismatch */
 			}
 		}
-		
+
 		/* check if needle has been fully matched */
 		if (needle[len2] == '\0')
 		{
@@ -42,7 +42,7 @@ char *_strstr(char *haystack, char *needle)
 		}
 
 		/* move to next character in haystack */
-		len1 = len1 - len2 + 1;
+		len1 + len1 - len2 + 1;
 	}
 
 	/* return NULL if needle is not found in haystack */
