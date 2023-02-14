@@ -42,7 +42,7 @@ char *_strstr(char *haystack, char *needle)
 		}
 
 		/* move to next character in haystack */
-		len1 + len1 - len2 + 1;
+		len1 = len1 - len2 + 1;
 	}
 
 	/* return NULL if needle is not found in haystack */
