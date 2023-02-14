@@ -1,9 +1,11 @@
 #include "holberton.h"
 /**
  *
- * This function appends the src string to the dest string, 
- * overwriting the terminating null byte (\0) at the end of dest, 
- * and then adds a terminating null byte
+ * _strcat - appends src string to dest string
+ * @dest: string to appended
+ * @src: copied string
+ *
+ * Return: pointer to resulting string dest
  *
  */
 char *_strcat(char *dest, char *src)
