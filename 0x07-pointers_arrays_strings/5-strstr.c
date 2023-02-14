@@ -12,7 +12,7 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	unsigned int len1 = 0; /*index for haystack */
+	unsigned int len1 = 0; /* index for haystack */
 	unsigned int len2 = 0; /* index for needle */
 
 	/* loop through haystack until end of string is reached */
@@ -29,9 +29,19 @@ char *_strstr(char *haystack, char *needle)
 				len1++; /* move to next character in haystack */
 				len2++; /* move to next character in needle */
 			}
+			else
+			{
+				break; /* exist loop on mismatch */
+			}
+		}
+		
+		/* check if needle has been fully matched */
+		if (needle[len2] == '\0')
+		{
+			return (haystack + (len1 - len2)); /* return pointer */
 		}
 
-		/* check if needle has been fully matched */
+		/* move to next character in haystack */
 		len1 = len1 - len2 + 1;
 	}
 
