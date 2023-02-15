@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-#include <tdio.h>
+#include <stdio.h>
 /**
  * main - prints random number and displays properties
  *
